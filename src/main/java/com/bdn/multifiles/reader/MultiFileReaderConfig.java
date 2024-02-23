@@ -28,11 +28,11 @@ public class MultiFileReaderConfig {
 
     @Bean
     public MultiResourceItemReader<SimpleFile> multiResourceItemReader() throws IOException {
-
+        System.out.println("Instantiating multiResourceItemReader");
         ResourcePatternResolver patternResolver = new PathMatchingResourcePatternResolver();
         //classpath*:some/package/name/**/*.xml
         Resource[] resources = inputFiles();
-        System.out.println("resources.length = " + inputFiles().length);
+        //System.out.println("resources.length = " + inputFiles().length);
 
 
 //        FlatFileItemReader<SimpleFile> flatFileItemReader = new FlatFileItemReader<>();

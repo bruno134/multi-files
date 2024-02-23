@@ -5,7 +5,6 @@ public class SimpleFile {
     private String name;
     private String lastName;
     private String age;
-
     private String fileName;
 
     public String getFileName() {
